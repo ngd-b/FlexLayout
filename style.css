@@ -1,0 +1,88 @@
+div,ul{
+	margin:0;
+	padding:0;
+}
+ul li{
+	list-style: none;
+}
+
+.box{
+	display: flex;
+	border:2px solid #eee;
+	border-radius: 5px;
+	margin:5px 0;
+}
+.box-item{
+	width:70px;
+	height:70px;
+	background-color: #eee;
+	margin:10px;
+	line-height: 70px;
+	text-align: center;
+}
+.container-item{
+	margin:10px 0;
+}
+/**
+ * 1.flex-direction
+ */
+.box-direction {
+	max-width: 650px;
+	flex-direction:row;
+}
+/**
+ * 2.flex-wrap
+ */
+.box-wrap{
+	max-width: 460px;
+	flex-wrap:nowrap;
+}
+/**
+ * justify-content
+ */
+.box-content{
+	max-width: 760px;
+	justify-content:flex-start;
+}
+/**
+ * align-items
+ */
+.box-items{
+	max-width: 760px;
+	align-items:flex-start;
+	min-height:240px; 
+}
+/**
+ * align-content
+ */
+.box-align{
+	max-width: 760px;
+	min-height: 340px;
+	flex-wrap:wrap;
+	align-content:flex-start;
+}
+
+
+.box-other{
+	background-color: #eee;
+	padding:10px 20px;
+	font-size: 18px;
+	margin:5px 0
+}
+
+/**
+ * 选择项
+ */
+.select ul,ul li{
+	display:inline-block;
+}
+.select-item{
+	width:120px;
+	height:34px;
+	line-height: 34px;
+	text-align: center;
+	background-color: #eee;
+	border:1px solid #fff;
+	border-radius: 4px;
+	cursor:pointer;
+}

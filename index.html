@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="container-item">
+			<div class="select">
+				<label for="">flex-direction</label>
+				<ul>
+					<li class="select-item">row</li>
+					<li class="select-item">row-reverse</li>
+					<li class="select-item">column</li>
+					<li class="select-item">column-reverse</li>
+				</ul>
+			</div>
+			<div class="box box-direction">
+				<div class="box-item">1</div>
+				<div class="box-item">2</div>
+				<div class="box-item">3</div>
+			</div>		
+		</div>
+		<div class="container-item">
+			<div class="select">
+				<label for="">flex-wrap</label>
+				<ul>
+					<li class="select-item">nowrap</li>
+					<li class="select-item">wrap</li>
+					<li class="select-item">wrap-reverse</li>
+				</ul>
+			</div>
+			<div class="box box-wrap">
+				<div class="box-item">1</div>
+				<div class="box-item">2</div>
+				<div class="box-item">3</div>
+				<div class="box-item">4</div>
+				<div class="box-item">5</div>
+				<div class="box-item">6</div>
+			</div>
+		</div>
+		<div class="box-other">
+			<p>flex-flow是flex-direction/flex-wrap两个属性的简写.</p>
+		</div>
+		<div class="container-item">
+			<div class="select">
+				<label for="">justify-content</label>
+				<ul>
+					<li class="select-item">flex-start</li>
+					<li class="select-item">flex-end</li>
+					<li class="select-item">center</li>
+					<li class="select-item">space-between</li>
+					<li class="select-item">space-around</li>
+				</ul>
+			</div>
+			<div class="box box-content">
+				<div class="box-item">1</div>
+				<div class="box-item">2</div>
+				<div class="box-item">3</div>
+			</div>
+		</div>
+		<div class="container-item">
+			<div class="select">
+				<label for="">align-items</label>
+				<ul>
+					<li class="select-item">flex-start</li>
+					<li class="select-item">flex-end</li>
+					<li class="select-item">center</li>
+					<li class="select-item">baseline</li>
+					<li class="select-item">stretch</li>
+				</ul>
+			</div>
+			<div class="box box-items">
+				<div class="box-item" style="height:auto;line-height:40px;">1</div>
+				<div class="box-item" style="height:auto;line-height:60px;">2</div>
+				<div class="box-item" style="height:auto;line-height:80px;">3</div>
+			</div>
+		</div>
+		<div class="container-item">
+			<div class="select">
+				<label for="">align-content</label>
+				<ul>
+					<li class="select-item">flex-start</li>
+					<li class="select-item">flex-end</li>
+					<li class="select-item">center</li>
+					<li class="select-item">space-between</li>
+					<li class="select-item">space-around</li>
+					<li class="select-item">stretch</li>
+				</ul>
+			</div>
+			<div class="box box-align">
+				<div class="box-item">1</div>
+				<div class="box-item">2</div>
+				<div class="box-item">3</div>
+				<div class="box-item">4</div>
+				<div class="box-item">5</div>
+				<div class="box-item">6</div>
+				<div class="box-item">7</div>
+				<div class="box-item">8</div>
+				<div class="box-item">9</div>
+				<div class="box-item">10</div>
+				<div class="box-item">11</div>
+				<div class="box-item">12</div>
+				<div class="box-item">13</div>
+				<div class="box-item">14</div>
+				<div class="box-item">15</div>
+				<div class="box-item">16</div>
+				<div class="box-item">17</div>
+				<div class="box-item">18</div>
+				<div class="box-item">19</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="index.js">
+</script>
+<script>
+	
+	window.onload=function(){
+		selectItem();
+		console.log(document.getElementsByClassName("box-direction")[0].style
+);
+	};
+</script>
+</html>
