@@ -23,6 +23,9 @@ ul li{
 .container-item{
 	margin:10px 0;
 }
+.container-item > p{
+	color:red;
+}
 /**
  * 1.flex-direction
  */
@@ -61,7 +64,24 @@ ul li{
 	flex-wrap:wrap;
 	align-content:flex-start;
 }
-
+/**
+ * 项目属性 order
+ */
+.box-order{
+	max-width:600px;
+}
+.box-order .box-item{
+	min-width:120px;
+}
+/**
+ * 项目属性 flex-shrink
+ */
+.box-shrink{
+	max-width:600px;
+}
+.box-shrink .box-item{
+	width:120px;
+}
 
 .box-other{
 	background-color: #eee;
@@ -69,7 +89,14 @@ ul li{
 	font-size: 18px;
 	margin:5px 0
 }
-
+/**
+ * align-self
+ */
+.box-self{
+	max-width: 760px;
+	align-items:flex-start;
+	min-height:240px; 
+}
 /**
  * 选择项
  */
