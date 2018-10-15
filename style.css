@@ -20,6 +20,8 @@ ul li{
 	line-height: 70px;
 	text-align: center;
 }
+.container{
+}
 .container-item{
 	margin:10px 0;
 }
@@ -60,9 +62,12 @@ ul li{
  */
 .box-align{
 	max-width: 760px;
-	min-height: 340px;
+	min-height: 360px;
 	flex-wrap:wrap;
 	align-content:flex-start;
+}
+.box-align .box-item{
+	height:auto;
 }
 /**
  * 项目属性 order
