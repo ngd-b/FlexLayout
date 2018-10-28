@@ -7,6 +7,7 @@
 </head>
 <body>
 	<div class="container">
+		<p style="background-color:#eee;text-align:center;color:red;">***点击属性，动态查看布局效果</p>
 		<h3>容器的属性：</h3>
 		<div class="container-item">
 			<div class="select">
@@ -225,8 +226,14 @@
 	
 	window.onload=function(){
 		selectItem();
-		console.log(document.getElementsByClassName("box-direction")[0].style
-);
+		let div = document.getElementsByClassName("container")[0];
+		for(let key in div){
+			console.log(key,div[key]);
+		}
+		div.onpointerdown=function(ev){
+			console.log(ev.pointerId);
+			div.setPointerCapture(ev.pointerId);
+		};
 	};
 </script>
 </html>
